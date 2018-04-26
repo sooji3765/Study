@@ -21,3 +21,44 @@
 </code></pre>
 
 - 메모리 주소 값이 다르다.
+
+> Kotlin 에서 적용시
+<pre><code>
+/*
+* 2.2 컬렉션
+* 자료의 가변 / 불변
+* */
+
+fun main(args: Array<String>) {
+
+    //자료를 수정할수 없는 리스트
+    val immutableList1 :List<String> = listOf("hello","word","hey")
+
+    val list2 : MutableList<String> = immutableList1 as MutableList<String>;
+
+    list2.add("num");
+    //컴파일 에러
+    //immutableList1.add("amet")
+
+    //자료를 수정할수 있는 리스트
+    val immutableList2 :MutableList<String> = arrayListOf("hello","word","hey")
+
+    immutableList2.add("amet")
+    for (item in immutableList2){
+        println(item)
+    }
+
+    //자료를 수정하지 않는 자료형으로 재 할당
+    val immutableList3 :List<String> = immutableList2
+
+    for (item in immutableList3){
+        println(item)
+    }
+    immutableList2.add("check")
+
+    for (item in immutableList2){
+        println(item)
+    }
+}
+
+</code></pre>
