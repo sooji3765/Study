@@ -535,9 +535,9 @@
   meth(a);
   ~~~
   메모리 2개 생성
-  a |num
-  --|--
-  34|34
+  a   |num
+  ----|----
+  34  | 34
 
   Call by reference
   ~~~java
