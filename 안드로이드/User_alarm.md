@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   - `setSingleChoiceItems`  : 하나만 선택
 
   4. ProgressDialog
+  
   ![progress](https://antonioleiva.com/wp-content/uploads/2017/04/alert-anko-kotlin-4-e1477125509982.png)
 
   - `setIndeterminate`
