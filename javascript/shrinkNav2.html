@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script type="text/javascript">
+       $(function(){
+         $(window).scroll(function() {
+            if($(window).scrollTop() >= 100) {
+              $('nav').addClass('scrolled');
+            }
+           else {
+             $('nav').removeClass('scrolled');
+           }
+         });
+       });
+     </script>
+    <style type="text/css">
+      // Home Styles
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    background: url('https://images.unsplash.com/photo-1431492299426-2ea1ce429cc0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=135705633ad6367a0565fceae4a57372');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+  .body-text {
+    position: relative;
+    z-index: 10;
+    padding-top: 7rem;
+
+    h1 {
+      font-family: sans-serif;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      padding-top: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      color: #777;
+      padding: 2rem 0;
+      line-height: 2rem;
+    }
+  }
+
+  nav {
+    background: none;
+    min-height: 85px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    z-index: 20;
+    transition: 0.35s all ease;
+
+    ul {
+    list-style: none;
+    padding: 2rem;
+    transition: 0.35s all ease;
+
+    li {
+      display: inline-block;
+      color: black;
+      padding: 0 1rem;
+      font-family: sans-serif;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+      }
+    }
+   }
+  }
+
+  .scrolled {
+    min-height: 10px;
+    background: black;
+    transition: 0.35s all ease;
+
+    ul {
+      padding: 1rem 2rem;
+      transition: 0.35s all ease;
+    }
+
+    li {
+      color: white;
+      transition: 0.2s all ease-in-out;
+    }
+  }
+
+  *{
+    box-sizing : border-box;
+  }
+
+  body{
+    margin:0;
+    font-family:Arial;
+    font-size:17px;
+  }
+
+  #myVideo{
+    position :fixed;
+    right:0;
+    bottom :0;
+    min-width :100%
+    min-height:100%
+  }
+  .content{
+      position:fixed;
+      bottom:0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+
+  }
+
+  #myBtn{
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+    #myBtn:hover{
+      background:#ddd;
+      color:black;
+
+  }
+
+
+
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+    <header>
+    <nav>
+   <ul>
+    <li>Link 1</li>
+    <li>Link 2</li>
+    <li>Link 3</li>
+  </ul>
+</nav>
+</header>
+
+<div class="banner">
+</div>
+
+<div class="body-text">
+  <div class="wrapper">
+    <h1>Shrinking Nav</h1>
+      <p>Viral wayfarers offal vegan, gentrify kinfolk bespoke. Cronut tattooed typewriter, locavore PBR&B man braid authentic drinking vinegar skateboard chartreuse normcore tilde vice VHS. Keffiyeh pinterest everyday carry, selfies YOLO sartorial locavore slow-carb chambray pug echo park green juice kickstarter church-key. Deep v ethical occupy, artisan quinoa banjo banh mi gluten-free food truck hammock. Forage taxidermy pork belly, intelligentsia thundercats ennui chambray cardigan tattooed everyday carry narwhal direct trade. Seitan polaroid waistcoat tofu, post-ironic four dollar toast irony marfa you probably haven't heard of them typewriter stumptown photo booth humblebrag. Distillery fanny pack wolf, tilde keytar dreamcatcher stumptown seitan truffaut.</p>
+
+    <p>Viral wayfarers offal vegan, gentrify kinfolk bespoke. Cronut tattooed typewriter, locavore PBR&B man braid authentic drinking vinegar skateboard chartreuse normcore tilde vice VHS. Keffiyeh pinterest everyday carry, selfies YOLO sartorial locavore slow-carb chambray pug echo park green juice kickstarter church-key. Deep v ethical occupy, artisan quinoa banjo banh mi gluten-free food truck hammock. Forage taxidermy pork belly, intelligentsia thundercats ennui chambray cardigan tattooed everyday carry narwhal direct trade. Seitan polaroid waistcoat tofu, post-ironic four dollar toast irony marfa you probably haven't heard of them typewriter stumptown photo booth humblebrag. Distillery fanny pack wolf, tilde keytar dreamcatcher stumptown seitan truffaut.</p>
+
+    <p>Viral wayfarers offal vegan, gentrify kinfolk bespoke. Cronut tattooed typewriter, locavore PBR&B man braid authentic drinking vinegar skateboard chartreuse normcore tilde vice VHS. Keffiyeh pinterest everyday carry, selfies YOLO sartorial locavore slow-carb chambray pug echo park green juice kickstarter church-key. Deep v ethical occupy, artisan quinoa banjo banh mi gluten-free food truck hammock. Forage taxidermy pork belly, intelligentsia thundercats ennui chambray cardigan tattooed everyday carry narwhal direct trade. Seitan polaroid waistcoat tofu, post-ironic four dollar toast irony marfa you probably haven't heard of them typewriter stumptown photo booth humblebrag. Distillery fanny pack wolf, tilde keytar dreamcatcher stumptown seitan truffaut.</p>
+
+    <p>Viral wayfarers offal vegan, gentrify kinfolk bespoke. Cronut tattooed typewriter, locavore PBR&B man braid authentic drinking vinegar skateboard chartreuse normcore tilde vice VHS. Keffiyeh pinterest everyday carry, selfies YOLO sartorial locavore slow-carb chambray pug echo park green juice kickstarter church-key. Deep v ethical occupy, artisan quinoa banjo banh mi gluten-free food truck hammock. Forage taxidermy pork belly, intelligentsia thundercats ennui chambray cardigan tattooed everyday carry narwhal direct trade. Seitan polaroid waistcoat tofu, post-ironic four dollar toast irony marfa you probably haven't heard of them typewriter stumptown photo booth humblebrag. Distillery fanny pack wolf, tilde keytar dreamcatcher stumptown seitan truffaut.</p>
+  </div>
+</div>
+
+<div class="container">
+<video autoplay muted loop class="myVideo">
+  <source src="player.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+</div>
+  </body>
+</html>
