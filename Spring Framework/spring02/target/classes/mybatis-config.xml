@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+		<typeAlias type="com.example.spring02.model.shop.dto.ProductDTO" alias="Product"/>	
+		
+		<typeAlias type="com.example.spring02.model.member.dto.MemberDTO" alias="Member"/>
+		
+		<typeAlias type="com.example.spring02.model.shop.dto.CartDTO" alias="Cart"/>
+	
+		<typeAlias type="com.example.spring02.model.message.dto.MessageDTO" alias="Message"/>
+	</typeAliases>
+
+</configuration>
+
