@@ -745,9 +745,6 @@ http://jeong-pro.tistory.com/80?category=793347 : 사이트 참고
   ① Statement : 정적 쿼리 시 사용. 매번 파싱과정을 거쳐야 함.(부하가 생길 수 있음) SQL문 전체를 명확히 알 수 가 있어서 디버깅이 쉬움.
   ② Prepared Statement : 동적 쿼리 시 사용.  한번 파싱하면 그 동일 SQL문장을 곧 바로 파싱 과정 없이 Execution 가능. (반복적인 다량의 SQL 수행 시 성능 상 이득이 있음) . 오류발생 시, 변수에 입력되는 값을 알 수 없어서 디버깅이 어려움.
 
-- 동적으로 쿼리문이 생성된다면 Statement를 사용
-- 반대로 쿼리문이 변하지 않는다면(정적) preparedStatement를 사용
-
 
 
 ######웹 개발자로 지원한다면, back-end와 front-end의 차이점에 대해 설명해보아라

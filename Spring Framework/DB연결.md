@@ -85,6 +85,6 @@ public class MainControllerTest {
 
 ~~~
 
-SqlSessionTemplate : SqlSession 객체 생성
-SqlSessionFactoryBean : SqlSessionTemplate 객체 생성
-DriverManagerDataSource : DB연동 클래스
+- SqlSessionTemplate : SqlSession 객체 생성
+- SqlSessionFactoryBean : SqlSessionTemplate 객체 생성
+- DriverManagerDataSource : DB연동 클래스

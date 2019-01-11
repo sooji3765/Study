@@ -30,50 +30,50 @@
     - 개발속도 향상
     - 상속을 통한 장점 극대화
 
-    장점
-    - 코드의 재사용성이 높아 새로운 코드를 작성할 떄 기존의 코드를 이용하여 쉽게 작성할 수 있다.
-    - 제어자와 method를 이용해서 데이터를 보호하고 올바른 값을 유지하도록하며, 코드의 중복을 제거하여 코드의 불일치로 인한 오동작을 방지
+  장점
+  - 코드의 재사용성이 높아 새로운 코드를 작성할 떄 기존의 코드를 이용하여 쉽게 작성할 수 있다.
+  - 제어자와 method를 이용해서 데이터를 보호하고 올바른 값을 유지하도록하며, 코드의 중복을 제거하여 코드의 불일치로 인한 오동작을 방지
 
-    ###### 캡슐화
-    - 중요한 데이터(변수)를 숨김(정보 은닉)
-    - public method를 통해 변수에 접근
-    ~~~java
-        class K1{
+  ###### 캡슐화
+  - 중요한 데이터(변수)를 숨김(정보 은닉)
+  - public method를 통해 변수에 접근
+  ~~~java
+      class K1{
 
-          private int num =10; // 외부 접근 x
-          protected int num2 = 20;
-          String name ="kig" ; // default
-          public void setNum(int num){ //캡슐화
-            this.num = num;
-          }
-          public int getNum(){
-            return num;
-          }
+        private int num =10; // 외부 접근 x
+        protected int num2 = 20;
+        String name ="kig" ; // default
+        public void setNum(int num){ //캡슐화
+          this.num = num;
         }
-
-        class K2 extends K1{
-          void print(){
-            setNum(100);
-            System.out.println(num2;
-            System.out.println(getNum());
-            System.out.println(name);
-          }
+        public int getNum(){
+          return num;
         }
-    ~~~
+      }
 
-    ###### 상속
-    - 코드 재사용
+      class K2 extends K1{
+        void print(){
+          setNum(100);
+          System.out.println(num2;
+          System.out.println(getNum());
+          System.out.println(name);
+        }
+      }
+  ~~~
 
-    ###### 다형성 (polymorphism)
-    - 여러 가지 형태를 가질 수 있는 능력
-    - 하나의 참조변수로 여러 자료형의 객체를 참조할 수 있는 것
-    - 실생활 예 : 마스터키, 만능리모컨
-    - 부모 클래스의 참조변수로 자식클래스의 객체를 다룰 수 있는 방법
+  ###### 상속
+  - 코드 재사용
 
-    ###### 추상화
-    - 추상클래스와 인터페이스
-    - 모델의 자세한 성질은 무시하고 일반적인 성질을 나타냄
-    - 객체의 공통적인 성질과 행위를 일반화하여 상위클래스를 디자인하고 자세한 성직은 하위클래스에서 구현
+  ###### 다형성 (polymorphism)
+  - 여러 가지 형태를 가질 수 있는 능력
+  - 하나의 참조변수로 여러 자료형의 객체를 참조할 수 있는 것
+  - 실생활 예 : 마스터키, 만능리모컨
+  - 부모 클래스의 참조변수로 자식클래스의 객체를 다룰 수 있는 방법
+
+  ###### 추상화
+  - 추상클래스와 인터페이스
+  - 모델의 자세한 성질은 무시하고 일반적인 성질을 나타냄
+  - 객체의 공통적인 성질과 행위를 일반화하여 상위클래스를 디자인하고 자세한 성직은 하위클래스에서 구현
 
 3. Object
     - Object(객체)는 OOP에서 `데이터(변수)` 와 그 데이터에 관련되는 `동작(함수)`, 즉 절차, 방법, 기능을 모두 포함한 개념
