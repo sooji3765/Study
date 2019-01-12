@@ -37,14 +37,8 @@
 
 10. Session		
 
-11. 한글 처리
+11. JDBC		
 
-12. 오라클 설치		
+12. DAO와 DTO		
 
-13. SQL		
-
-14. JDBC		
-
-15. DAO와 DTO		
-
-16. Connection Pool
+13. Connection Pool
