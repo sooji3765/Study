@@ -30,15 +30,15 @@
 7. JSP 내장객체
 
     https://github.com/sooji3765/Study/blob/master/JSP/JSP%20%EB%82%B4%EC%9E%A5%EA%B0%9D%EC%B2%B4.md
+      
+8. Servlet 데이터 공유	
+	
+    https://github.com/sooji3765/Study/blob/master/JSP/Servlet%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B3%B5%EC%9C%A0.md
+
+9. Cookie
+		
+    https://github.com/sooji3765/Study/blob/master/JSP/Cookie.md
     
-8. Servlet 데이터 공유		
-
-9. Cookie		
-
 10. Session		
 
-11. JDBC		
-
-12. DAO와 DTO		
-
-13. Connection Pool
+    https://github.com/sooji3765/Study/blob/master/JSP/session.md
