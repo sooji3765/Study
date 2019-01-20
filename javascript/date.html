@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test_date</title>
+
+	<script type="text/javascript">
+		function checkDate() {
+			var s = document.getElementById("path").value;
+			document.write(s+"<br>");
+
+			var pdate = new Date(s);
+			var today = new Date();
+			document.write("타임스탬프: "+pdate.getTime()+"<br>");
+			document.write(today.getTime()+"<br>");
+
+			var diff = today.getTime()-pdate.getTime();
+			document.write(diff+"<br>");
+			document.write(diff /(1000*60*60*24)+"<br>");
+
+			var days = Math.floor(diff/(1000*60*60*24));
+			document.write("days:"+days);
+
+			if (days >30) {
+				alert("교환가능")
+			}else{
+				alert("교환 불가능");
+			}			
+		}
+	</script>
+
+</head>
+<body>
+
+	<form>
+		<input type="date" id="path">
+		<input type="button" value="
+		cul" onclick="checkDate()">
+	</form>
+
+</body>
+</html>

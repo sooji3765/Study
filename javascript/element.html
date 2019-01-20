@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>element</title>
+</head>
+<body>
+	<ul>
+		<li>item1</li>
+		<li><span>hello</span>item2</li>
+		<li>item3</li>
+		<li>item4</li>
+	</ul>
+
+<script type="text/javascript">
+
+	var list = document.getElementByTagName("ul")[0];
+
+	var allItems = list.getElementByTagName("li");
+
+	for (var i = 0;i<allItems.length;i++) {
+		alert(allItems[i].firstChild);
+	}
+</script>
+</body>
+</html>

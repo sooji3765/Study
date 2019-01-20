@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>제이쿼리 실행</title>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(function(){
+			$("h2").click(function(){
+				console.log(this);
+				$(this).hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h2>item1</h2>
+	<h2>item2</h2>
+	<h2>item3</h2>
+</body>
+</html>

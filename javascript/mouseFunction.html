@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>마우스 bind</title>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(function(){
+			
+			$("img").bind({
+
+				mouseout : function(){
+					$("img").attr("src","img/less.png");
+				},
+				/* mouse위 */
+				mouseover: function(){
+					$("img").attr("src","img/sass.png");
+				},
+				click : function(){
+					$("img").attr("src","img/bootstrap2.png");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<img src="img/b.png">
+</body>
+</html>
